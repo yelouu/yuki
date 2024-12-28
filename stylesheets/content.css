@@ -1,0 +1,397 @@
+body{
+    background: #006FFF;
+    height: 300vw;
+    width: 100%;
+    position: relative;
+    overflow-x: hidden;
+}
+
+
+.menu {
+    width: 100vw;
+    height: 110vw;
+    background-size: 100%;
+    background-repeat: no-repeat ;
+    position: fixed;
+    background-image: url(../img/menu.svg);
+}
+
+.warn {
+    width: 100vw;
+    height: 110vw;
+    background-size: 8%;
+    background-repeat: no-repeat ;
+    position: fixed;
+    background-image: url(../img/warn.svg);
+
+    animation: flash 100ms ease infinite alternate;
+      }
+      @keyframes flash {
+          from { opacity: 1; }	
+          to { opacity: 0; }
+      
+}
+
+.crol {
+    background-image: url(../img/rabbit.svg);
+    background-size: 6%;
+    width: 100vw;
+    height: 110vw;
+    background-repeat: no-repeat ;
+    position: absolute;
+    margin-left: 12%;
+    margin-top: 45%;
+
+    animation: fly 5s ease-in-out  infinite;
+}
+
+.crol:hover {
+    background-image: url(../img/rabblank.svg);
+    background-size: 6%;
+    width: 100vw;
+    height: 110vw;
+    background-repeat: no-repeat ;
+    position: absolute;
+    margin-left: 12%;
+    margin-top: 45%;
+
+    animation: fly 5s ease-in-out  infinite;
+}
+
+/* ---прыгающая гадина---*/
+
+@keyframes fly {
+    0%{
+        left: 0%; top: 0%;
+    }
+
+    20%{
+        left: 80%; top: 12%;
+    }
+    30%{
+        left: 60%; top: 8%;
+    }
+    35%{
+        left: 43%; top: 12%;
+    }
+    38%{
+        left: 43%; top: 10%;
+    }
+    40%{
+        left: 38%; top: 12%;
+    }
+    50%{
+        left: 30%; top: 0%;
+    }
+    55%{
+        left: 0%; top: 5%;
+    }
+    65%{
+        left: 0%; top: 12%;
+    }
+    70%{
+        left: 24%; top: 12%;
+    }
+    72%{
+        left: 25%; top: 12%;
+    }
+    78%{
+        left: 25%; top: 5%;
+    }
+    79%{
+        left: 25%; top: 6%;
+    }
+    84%{
+        left: 43%; top: 0%;
+    }
+    85%{
+        left: 45%; top: 1%;
+    }
+    90%{
+        left: 45%; top: 12%;
+    }
+    100%{
+        left: 0%; top: 0%;
+    }
+    
+}
+
+/* ---прыгающая гадина---*/
+
+.frame {
+    background-image: url(../img/frame.svg);
+    width: 100vw;
+    height: 110vw;
+    background-repeat: no-repeat ;
+    position: absolute;
+    background-size: 87%;
+    margin-left: 11%;
+    margin-top: 43%;
+}
+
+.not {
+    margin-left: 85.5%;
+    margin-top: 0%;
+    width: 17vw;
+    height: 5vw;
+    background-size: 90%;
+    background-repeat: no-repeat ;
+    position: fixed;
+    background-image: url(../img/notice.svg);
+    animation: hithere 1s ease  infinite;
+    transform-origin: center;
+}
+
+@keyframes hithere {
+  30% { transform: scale(1.2);  }
+  40% { transform: rotate(-20deg) scale(1.2); }
+  50% { transform: rotate(20deg) scale(1.2); }
+  70% { transform: rotate(0deg) scale(1.2); }
+  100% { transform: scale(1); }
+ 
+}
+
+
+.screen1{
+    position: relative;
+}
+
+.usa{
+    position: absolute;
+    width: 15%;
+    margin-left: 8%;
+    margin-top: 8%;
+    animation: squezee 2s ease-in-out  infinite 1s;
+    transform-origin:  center left;
+}
+
+@keyframes squezee {
+    0%{
+
+        transform: scale(1, 1) ;  left: 0% ; 
+    }
+    50%{
+        transform: scale(2.7, 1); left: 0% ; 
+    }
+    100%{
+        transform: scale(1, 1);  left: 0% ;
+    }
+}
+
+.usa2{
+    width: 50%;
+    margin-left: 45%;
+    margin-top: 8%;
+    position: absolute;
+    animation: squezee1 2s ease-in-out infinite 2s reverse;
+    transform-origin:  center right;
+}
+
+@keyframes squezee1 {
+    0%{
+        transform: scale(1, 1) ;  left: 0% ;
+    }
+    
+    50%{
+        transform: scale(1.5, 1); left: 0% ;}
+    100%{
+        transform: scale(1, 1);  left: 0% ;}
+}
+
+
+
+/*  --огромный текстовый блок--  */
+
+.ns {
+    color: #A4B0BE;
+    line-height: 150%;
+    margin-left: 12%;
+
+    width: 86%;
+    position: absolute;
+    animation: lenta 3s linear infinite;
+}
+@keyframes lenta {
+    0%{
+       top: 0%;
+    }
+    100%{
+       top: 100%;
+    }
+}
+
+.netext {
+   margin-top: 44%;
+   width: 100%; 
+   height: 45vw;
+   position: absolute; 
+  
+   overflow: hidden;
+   
+}
+
+
+
+/*  --огромный текстовый блок--  */
+
+.f {
+    background-image: url(../img/F.svg);
+    width: 50%;
+    height: 50%;
+    background-size: 80%;
+    background-repeat: no-repeat;
+    margin-top: 95%;
+    position: absolute; 
+    margin-left: 8%;
+    animation: move 2s ease-in-out infinite; 
+}
+ @keyframes move {
+    0%{
+        left:0%; transform: scaleX(1); background-image: url(../img/F2.svg);
+    }
+
+    50%{
+        left:49%; transform: scalex(1); background-image: url(../img/Fred.svg);
+    }
+ 
+    100%{
+        left:0%; transform: scalex(1); background-image: url(../img/F2.svg);
+    }
+   
+ }
+ 
+ .rct {
+    background-image: url(../img/rct.svg);
+    width: 60%;
+    height: 50%;
+    background-size: 30%;
+    background-repeat: no-repeat;
+    position: absolute;
+    margin-top: 95%;
+    margin-left: 13%;
+}
+
+ .txt {
+    background-image: url(../img/txt.svg);
+    width: 60%;
+    height: 50%;
+    background-size: 52%;
+    background-repeat: no-repeat;
+    position: absolute;
+    margin-top: 104%;
+    margin-left: 13%;
+
+}
+
+ .tr {
+    background-image: url(../img/tringle.svg);
+    width: 60%;
+    height: 50%;
+    background-size: 100%;
+    background-repeat: no-repeat;
+    position: absolute;
+    margin-top: 95%;
+    margin-left: 13%;
+    animation: squezee3 2s ease-in-out infinite reverse;
+    transform-origin:  center left;
+ }
+
+@keyframes squezee3 {
+    0%{
+
+        transform: scale(1.4, 1) ;  left: 0% ;
+    }
+    50%{
+        transform: scale(0.5, 1); left: 0% ;}
+    100%{
+        transform: scale(1.4, 1);  left: 0% ;}
+}
+
+.cross {
+    background-image: url(../img/cross.svg);
+    margin-top: 16%;
+    margin-left: 48%;
+    width: 60%;
+    height:50%;
+    background-size: 16%;
+    background-repeat: no-repeat;
+    position: fixed;
+}
+
+.cross:hover {
+    background-image: url(../img/crossfit.svg);
+    margin-top: 16%;
+    margin-left: 48%;
+    width: 60%;
+    height:50%;
+    background-size: 16%;
+    background-repeat: no-repeat;
+    position: fixed;
+}
+
+.cross1 {
+    background-image: url(../img/cross.svg);
+    margin-top: 135.5%;
+    margin-left: 36%;
+    width: 60%;
+    height:50%;
+    background-size: 16%;
+    background-repeat: no-repeat;
+    position: absolute;
+
+    animation: flash 1s ease-in-out infinite;
+}
+
+@keyframes flash {
+    from { opacity: 1; }	
+    to { opacity: 0; }
+
+}
+
+.cross2 {
+    background-image: url(../img/cross.svg);
+    margin-top: 135.5%;
+    margin-left: 59.7%;
+    width: 60%;
+    height:50%;
+    background-size: 16%;
+    background-repeat: no-repeat;
+    position: absolute;
+
+    animation: flash 1s ease-in-out infinite;
+}
+
+.frame1 {
+    background-image: url(../img/frame.svg);
+    width: 100vw;
+    height: 110vw;
+    background-repeat: no-repeat ;
+    position: absolute;
+    background-size: 87%;
+    margin-left: 11%;
+    margin-top: 117%;
+}
+
+.end {
+    background-image: url(../img/end.svg);
+    width: 100vw;
+    position: absolute;
+    height: 110vw;
+    background-repeat: no-repeat ;
+    margin-top: 225%;
+    margin-left: 8%;
+}
+
+.red {
+    background-image: url(../img/redusa.svg);
+    width: 100vw;
+    position: absolute;
+    height: 110vw;
+    background-repeat: no-repeat ;
+    margin-top: 200%;
+    margin-left: 33%;
+    background-size: 35%;
+    animation: flash 300ms ease-in-out infinite;
+
+}
+
